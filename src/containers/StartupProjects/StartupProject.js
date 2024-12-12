@@ -82,7 +82,7 @@ export default function StartupProject() {
                           {project.techStack.frontend &&
                             project.techStack.frontend.length > 0 && (
                               <div className="tech-group">
-                                <strong>Frontend:</strong>
+                                <strong>Frontend</strong>
                                 <ul>
                                   {project.techStack.frontend.map(
                                     (tech, idx) => (
@@ -105,7 +105,7 @@ export default function StartupProject() {
                           {project.techStack.backend &&
                             project.techStack.backend.length > 0 && (
                               <div className="tech-group">
-                                <strong>Backend:</strong>
+                                <strong>Backend</strong>
                                 <ul>
                                   {project.techStack.backend.map(
                                     (tech, idx) => (
@@ -124,11 +124,30 @@ export default function StartupProject() {
                                 </ul>
                               </div>
                             )}
-
+{project.techStack.database &&
+                            project.techStack.database.length > 0 && (
+                              <div className="tech-group">
+                                <strong>Database</strong>
+                                <ul>
+                                  {project.techStack.database.map((db, idx) => (
+                                    <li
+                                      key={idx}
+                                      className={
+                                        isDark
+                                          ? "dark-mode card-subtitle"
+                                          : "card-subtitle"
+                                      }
+                                    >
+                                      {db}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
                           {project.techStack.paymentGateways &&
                             project.techStack.paymentGateways.length > 0 && (
                               <div className="tech-group">
-                                <strong>Payment Gateway:</strong>
+                                <strong>Payment Gateway</strong>
                                 <ul>
                                   {project.techStack.paymentGateways.map(
                                     (tech, idx) => (
@@ -147,26 +166,7 @@ export default function StartupProject() {
                                 </ul>
                               </div>
                             )}
-                          {project.techStack.database &&
-                            project.techStack.database.length > 0 && (
-                              <div className="tech-group">
-                                <strong>Database:</strong>
-                                <ul>
-                                  {project.techStack.database.map((db, idx) => (
-                                    <li
-                                      key={idx}
-                                      className={
-                                        isDark
-                                          ? "dark-mode card-subtitle"
-                                          : "card-subtitle"
-                                      }
-                                    >
-                                      {db}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            )}
+                          
                         </div>
                       </div>
                     )}

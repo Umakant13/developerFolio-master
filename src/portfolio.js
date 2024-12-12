@@ -283,7 +283,7 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/jobportal.jpg"),
-      projectName: "HireHub Connect",
+      projectName: "HireHub - A Job Portal Application",
       projectDesc: "A comprehensive job portal application connecting employers and job seekers with advanced search and management features.",
       techStack: {
         frontend: ["React"],
