@@ -16,13 +16,10 @@ Just change `src/portfolio.js` to get your personal portfolio. Customize portfol
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
 - [Linking portfolio to GitHub](#linking-portfolio-to-github)
-- [Linking blogs section to Medium](#linking-blogs-section-to-medium)
 - [Change and Customize](#change-and-customize-every-section-according-to-your-need)
 - [Deployment](#deployment)
 - [Technologies Used](#technologies-used)
 - [Illustrations](#illustrations)
-- [For the Future](#for-the-future)
-- [Contributors](#project-maintainers)
 
 ## Portfolio Sections
 ✔️ Summary and About me\
@@ -156,6 +153,8 @@ For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` functi
 
 You can choose a Lottie and download it in json format from sites like [this](https://lottiefiles.com/). In `src/assets/lottie`, replace the Lottie json file you want to alter with the same file name. If you want to change the Lottie options, go to `src/components/displayLottie/DisplayLottie.js` and change the `defaultOptions` object, you can refer [lottie-react docs](https://www.npmjs.com/package/lottie-react) for more info on the `defaultOptions` object.
 
+
+## Deployment
 
 #### Deploying to Netlify
 
